@@ -30,3 +30,26 @@
     width: 25vw;
     float:right;
 }
+
+.guestmain{
+    margin: 20px;
+}
+.guestinstance{
+    
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 20px;
+    flex-wrap: wrap;
+}
+.guestcircle{
+    width:10vw;
+    min-width: 100px;
+}
+.guestname{
+    text-align: center;
+}
+
+i.footericon { 
+    color: white;
+    padding: 1vw;
+} 
