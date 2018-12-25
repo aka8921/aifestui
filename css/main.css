@@ -1,3 +1,32 @@
-body{
-    background-color:red;
+.mainscreen {
+    height: 100vh;
+    background-image: linear-gradient(to bottom right, rgb(78, 0, 78), rgb(238, 51, 176));
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.mainarea{
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+         
+}
+
+.maintextarea{
+    color: white;
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.imagearea{
+    flex-grow: 3;
+}
+
+.imagearea img{
+    width: 25vw;
+    float:right;
 }
