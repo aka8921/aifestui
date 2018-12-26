@@ -92,6 +92,7 @@
             </div>
 
             <div class="participant z-depth-3">
+                <h2 class="cardheading">Participant #1</h2>
                 <div class="row">
                     <div class="input-field col s6">
                       <input placeholder="First Name" id="first_name" type="text" class="validate">
@@ -114,8 +115,53 @@
                         <input placeholder="Mobile N.o" id="number" type="text" class="validate">
                         <label for="number">Mobile N.o</label>
                       </div>
-
+                      
                   </div>
+
+                  <div class="row s12">
+
+
+                    <div class="col">
+                        <p>
+                            <label>
+                              <input class="with-gap" name="group3" type="radio" checked />
+                              <span>S</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input class="with-gap" name="group3" type="radio"  />
+                              <span>M</span>
+                            </label>
+                          </p>
+                          
+                      </div>
+                      <div class="col">
+                        <p>
+                            <label>
+                              <input class="with-gap" name="group3" type="radio"  />
+                              <span>L</span>
+                            </label>
+                          </p>
+                          <p>
+                            <label>
+                              <input class="with-gap" name="group3" type="radio" />
+                              <span>XL</span>
+                            </label>
+                          </p>
+                      </div>
+                      <div class="col">
+                        <p>
+                            <label>
+                              <input class="with-gap" name="group3" type="radio"  />
+                              <span>XXL</span>
+                            </label>
+                          </p>
+                      </div>
+                  </div>
+                  
+  <a class="btn-floating btn-large waves-effect waves-light red " onclick="toastit()" ><i class="material-icons">add</i></a>
+        
                   </div>
 
             </div>
@@ -142,7 +188,13 @@
           </div>
         </div>
       </footer>
-          
+        <script>
+        
+        function toastit(){
+            M.Toast.dismissAll();
+            M.toast({html: 'Cannot add more than 6 participants'});
+        }
+        </script>
 </body>
 </html>
 

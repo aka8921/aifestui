@@ -59,3 +59,9 @@ i.footericon {
     border-radius: 20px;
     padding: 40px;
 }
+
+.cardheading{
+    margin-bottom: 5vh;
+    margin-top: 0;
+}
+
