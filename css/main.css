@@ -1,3 +1,6 @@
+body{
+    overflow-x: hidden;
+}
 .mainscreen {
     height: 100vh;
     background-image: linear-gradient(to bottom right, rgb(78, 0, 78), rgb(238, 51, 176));
@@ -31,23 +34,12 @@
     float:right;
 }
 
-.guestmain{
-    margin: 20px;
-}
 .guestinstance{
-    
     display: flex;
     justify-content: flex-start;
-    margin: 0 20px;
     flex-wrap: wrap;
 }
-.guestcircle{
-    width:10vw;
-    min-width: 100px;
-}
-.guestname{
-    text-align: center;
-}
+
 
 i.footericon { 
     color: white;
@@ -63,5 +55,9 @@ i.footericon {
 .cardheading{
     margin-bottom: 5vh;
     margin-top: 0;
+}
+
+.chip{
+    margin: 10px;
 }
 
