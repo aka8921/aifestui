@@ -14,7 +14,7 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-            
+
 </head>
 <body>
     <div class="mainscreen">
@@ -23,7 +23,7 @@
             <div class="maintextarea">
                 <h1>We are BACK!</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium aliquid minus quaerat?</p>
-                <a class="waves-effect waves-light btn"><i class="material-icons left"><i class="fab fa-github-square"></i></i>Contribute</a>
+                <a class="waves-effect waves-light btn" href="#registration"><i class="material-icons left">stars</i>Register</a>
             </div>
             <div class="imagearea hide-on-small-only">
                 <img src="./img/github.png" alt="">
@@ -37,9 +37,19 @@
         <h1>Our Guests</h1>
 
         <div class="guestinstance">
-                <div class="chip" onclick = "toastit()">
+                <a href="#modall">
+                        <div class="chip" onclick = "">
+                                <img src="./img/meharmoosa.jpg" alt="Contact Person">
+                                Mehar Moosa
+                        </div>
+                </a>
+                <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
+                        Mehar
+                </div>
+                <div class="chip">
+                        <img src="./img/meharmoosa.jpg" alt="Contact Person">
+                        Lorem, ipsum dolor.
                 </div>
                 <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
@@ -47,23 +57,15 @@
                 </div>
                 <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
+                        Meh
                 </div>
                 <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
+                        gopi sasikumar
                 </div>
                 <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
-                </div>
-                <div class="chip">
-                        <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
-                </div>
-                <div class="chip">
-                        <img src="./img/meharmoosa.jpg" alt="Contact Person">
-                        Mehar Moosa
+                        kl 
                 </div>
                 <div class="chip">
                         <img src="./img/meharmoosa.jpg" alt="Contact Person">
@@ -83,7 +85,7 @@
 
     </div>
 
-    <div class="registrationform container">
+    <div class="registrationform container" id="registration">
         <h2>Registration</h2>
         <form action="">
             <div class="input-field col s12">
@@ -95,81 +97,19 @@
                 <label for="description">description</label>
             </div>
 
-            <div class="participant z-depth-3">
-                <h2 class="cardheading">Participant #1</h2>
-                <div class="row">
-                    <div class="input-field col s6">
-                      <input placeholder="First Name" id="first_name" type="text" class="validate">
-                      <label for="first_name">First Name</label>
-                    </div>
-                    <div class="input-field col s6">
-                      <input placeholder="Last Name" id="last_name" type="text" class="validate">
-                      <label for="last_name">Last Name</label>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s12">
-                      <input id="email" type="email" class="validate">
-                      <label for="email">Email</label>
-                      <span class="" data-error="wrong" data-success="right"></span>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="input-field col s6">
-                        <input placeholder="Mobile N.o" id="number" type="text" class="validate">
-                        <label for="number">Mobile N.o</label>
-                      </div>
-                      
-                  </div>
-
-                  <div class="row s12">
-
-
-                    <div class="col">
-                        <p>
-                            <label>
-                              <input class="with-gap" name="group3" type="radio" checked />
-                              <span>S</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input class="with-gap" name="group3" type="radio"  />
-                              <span>M</span>
-                            </label>
-                          </p>
-                          
-                      </div>
-                      <div class="col">
-                        <p>
-                            <label>
-                              <input class="with-gap" name="group3" type="radio"  />
-                              <span>L</span>
-                            </label>
-                          </p>
-                          <p>
-                            <label>
-                              <input class="with-gap" name="group3" type="radio" />
-                              <span>XL</span>
-                            </label>
-                          </p>
-                      </div>
-                      <div class="col">
-                        <p>
-                            <label>
-                              <input class="with-gap" name="group3" type="radio"  />
-                              <span>XXL</span>
-                            </label>
-                          </p>
-                      </div>
-                  </div>
-                  
-  <a class="btn-floating btn-large waves-effect waves-light red addparticipantbtn" onclick="toastit()" ><i class="material-icons">add</i></a>
-        
-                  </div>
-
-            </div>
-        </form>
+            
+            
+      </div>
+      <div class="addbtn container">
+        <div class="addparticipantbtn">
+            <a class="btn-floating btn-large waves-effect waves-light red " onclick="increment()" ><i class="material-icons">add</i></a>
+        </div>  
+        <div class="addparticipantbtn">
+            <a class="btn-floating btn-large waves-effect waves-light red " onclick="remove()" ><i class="material-icons">remove</i></a>
+        </div>
+          
+      </div>
+    </form>
     </div>
 
 
@@ -187,17 +127,115 @@
         </div>
         <div class="footer-copyright">
           <div class="container">
-          © 2019 All Rights Reserved
+          © 2019 All Rights recieved
           <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
           </div>
         </div>
       </footer>
         <script>
-        
-        function toastit(){
+          var i =0;
+          increment();
+          
+        function toastit(a){
             M.Toast.dismissAll();
-            M.toast({html: 'Cannot add more than 6 participants'});
+            M.toast({html: a});
         }
+
+
+
+  
+	function remove(){
+    if(i <= 1){
+      toastit("you need atleast 1 participant");
+      return;
+    }
+    var elem = document.getElementById("card"+i);
+    elem.parentNode.removeChild(elem);
+    i--;
+	}
+
+	function increment(){
+     
+		i++;
+		if(i>=7){
+			
+			toastit('Cannot add more than 6 participants');i--;
+			return;
+		}
+		var detail = '<div class="participant z-depth-3" id = "card'+i+'">\
+                    <h2 class="cardheading">Participant #'+i+'</h2>\
+                    <div class="row">\
+                      <div class="input-field col s6">\
+                        <input  id="first_name'+i+'" type="text" class="validate">\
+                        <label for="first_name'+i+'">First Name</label>\
+                      </div>\
+                    <div class="input-field col s6">\
+                      <input  id="last_name'+i+'" type="text" class="validate">\
+                      <label for="last_name'+i+'">Last Name</label>\
+                    </div>\
+                  </div>\
+                  <div class="row">\
+                    <div class="input-field col s12">\
+                      <input id="email'+i+'" type="email" class="validate">\
+                      <label for="email'+i+'">Email</label>\
+                      <span class="" data-error="wrong" data-success="right"></span>\
+                    </div>\
+                  </div>\
+                  <div class="row">\
+                    <div class="input-field col s6">\
+                        <input id="number'+i+'" type="text" class="validate">\
+                        <label for="number'+i+'">Mobile N.o</label>\
+                      </div>\
+                      \
+                  </div>\
+\
+                  <div class="row s12">\
+\
+\
+                    <div class="col">\
+                        <p>\
+                            <label>\
+                              <input class="with-gap" name="group3'+i+'" type="radio" checked />\
+                              <span>S</span>\
+                            </label>\
+                          </p>\
+                          <p>\
+                            <label>\
+                              <input class="with-gap" name="group3'+i+'" type="radio"  />\
+                              <span>M</span>\
+                            </label>\
+                          </p>\
+                          \
+                      </div>\
+                      <div class="col">\
+                        <p>\
+                            <label>\
+                              <input class="with-gap" name="group3'+i+'" type="radio"  />\
+                              <span>L</span>\
+                            </label>\
+                          </p>\
+                          <p>\
+                            <label>\
+                              <input class="with-gap" name="group3'+i+'" type="radio" />\
+                              <span>XL</span>\
+                            </label>\
+                          </p>\
+                      </div>\
+                      <div class="col">\
+                        <p>\
+                            <label>\
+                              <input class="with-gap" name="group3'+i+'" type="radio"  />\
+                               <span>XXL</span>\
+                            </label>\
+                          </p>\
+                      </div>\
+                  </div>\
+                  \
+  </div>'
+
+		document.getElementById('registration').innerHTML += detail;
+
+	}
         </script>
 </body>
 </html>

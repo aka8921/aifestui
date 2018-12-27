@@ -61,3 +61,14 @@ i.footericon {
     margin: 10px;
 }
 
+.addbtn{
+    
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.addparticipantbtn{
+    margin-right:20px;
+}
